@@ -9,30 +9,32 @@ private:
 public:
 
     morse()                          //for string input
-    {
+     {
         cout<<"Enter your string : ";
         getline(cin ,str);
-    }
-  
-  
-      void putdata()       //for print the morse code
-    {
+     }
+    void change();
+    void convert();
+
+    void putdata()       //for print the morse code
+     {
         cout<<"Morse code : ";
         convert();
-    }
+     }
 };
-  void morse::change()                    //change the string into uppercase
+    void morse::change()                    //change the string into uppercase
     {
-    for(int i=0;i<str.length();i++)
-    {
-        str[i]=toupper(str[i]);
-    }
-    }  void morse::convert()
+      for(int i=0;i<str.length();i++)
+        {
+           str[i]=toupper(str[i]);
+        } 
+    } 
+     void morse::convert()
     {
         for(int i=0;i<str.length();i++)  //convert the string into morse code
-        {
+         {
 
-            switch(str[i])
+           switch(str[i])
             {
             case 'A': cout<<".- "; break;
             case 'B': cout<<"-... "; break;
@@ -79,35 +81,36 @@ public:
             case '\'': cout<<".----. "; break;
             case '=': cout<<"-...- "; break;
             default:  continue; break;
-            }
-        }
+           }
+       }
     }
 int main()
 {
+    cout<<"\t\t\t";
     for(int i=1;i<77;i++)
     {
         cout<<"-";
     }
     cout<<endl;
-    cout<<"| *************************** MORSE CODE CONVERTER ************************|"<<endl;
+    cout<<"\t\t\t| *************************** MORSE CODE CONVERTER ************************|"<<endl<<"\t\t\t";
     for(int i=1;i<77;i++)
     {
         cout<<"-";
     }
+    cout<<endl<<endl;
+    morse m;                                   //creating the object for class morse
+    m.change();                                //methode call
     cout<<endl;
-    cout<<endl;
-    morse m;        //creating the object for class morse
-    m.change();     //methode call
-    cout<<endl;
-     for(int i=1;i<77;i++)
-    {
+    for(int i=1;i<77;i++)
+      {
         cout<<"-";
-    }
-    cout<<endl;
-    cout<<endl;
-    m.putdata();    //putdata methode call
+      }
+    cout<<endl<<endl;
+    m.putdata();                                //putdata methode call
     cout<<endl;
     return 0;
 }
+
+
 
 
