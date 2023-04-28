@@ -14,7 +14,20 @@ public:
         getline(cin ,str);
     }
   
-    void convert()
+  
+      void putdata()       //for print the morse code
+    {
+        cout<<"Morse code : ";
+        convert();
+    }
+};
+  void morse::change()                    //change the string into uppercase
+    {
+    for(int i=0;i<str.length();i++)
+    {
+        str[i]=toupper(str[i]);
+    }
+    }  void morse::convert()
     {
         for(int i=0;i<str.length();i++)  //convert the string into morse code
         {
@@ -68,19 +81,6 @@ public:
             default:  continue; break;
             }
         }
-    }
-      void putdata()       //for print the morse code
-    {
-        cout<<"Morse code : ";
-        convert();
-    }
-};
-  void morse::change()                    //change the string into uppercase
-    {
-    for(int i=0;i<str.length();i++)
-    {
-        str[i]=toupper(str[i]);
-    }
     }
 int main()
 {
