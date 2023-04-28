@@ -87,13 +87,13 @@ public:
 int main()
 {
     cout<<"\t\t\t";
-    for(int i=1;i<77;i++)
+    for(int i=1;i<78;i++)
     {
         cout<<"-";
     }
     cout<<endl;
-    cout<<"\t\t\t| *************************** MORSE CODE CONVERTER ************************|"<<endl<<"\t\t\t";
-    for(int i=1;i<77;i++)
+    cout<<"\t\t\t| *************************** MORSE CODE CONVERTER ************************ |"<<endl<<"\t\t\t";
+    for(int i=1;i<78;i++)
     {
         cout<<"-";
     }
@@ -101,7 +101,7 @@ int main()
     morse m;                                   //creating the object for class morse
     m.change();                                //methode call
     cout<<endl<<"\t\t\t";
-    for(int i=1;i<77;i++)
+    for(int i=1;i<78;i++)
       {
         cout<<"-";
       }
