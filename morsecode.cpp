@@ -13,13 +13,7 @@ public:
         cout<<"Enter your string : ";
         getline(cin ,str);
     }
-    void change()                    //change the string into uppercase
-    {
-    for(int i=0;i<str.length();i++)
-    {
-        str[i]=toupper(str[i]);
-    }
-    }
+  
     void convert()
     {
         for(int i=0;i<str.length();i++)  //convert the string into morse code
@@ -81,6 +75,13 @@ public:
         convert();
     }
 };
+  void morse::change()                    //change the string into uppercase
+    {
+    for(int i=0;i<str.length();i++)
+    {
+        str[i]=toupper(str[i]);
+    }
+    }
 int main()
 {
     for(int i=1;i<77;i++)
