@@ -97,15 +97,15 @@ int main()
     {
         cout<<"-";
     }
-    cout<<endl<<endl;
+    cout<<endl<<endl<<"\t\t\t";
     morse m;                                   //creating the object for class morse
     m.change();                                //methode call
-    cout<<endl;
+    cout<<endl<<"\t\t\t";
     for(int i=1;i<77;i++)
       {
         cout<<"-";
       }
-    cout<<endl<<endl;
+    cout<<endl<<endl<<"\t\t\t";
     m.putdata();                                //putdata methode call
     cout<<endl;
     return 0;
