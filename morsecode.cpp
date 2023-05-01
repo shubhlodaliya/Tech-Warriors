@@ -80,6 +80,10 @@ public:
             case '"': cout<<".-..-. "; break;
             case '\'': cout<<".----. "; break;
             case '=': cout<<"-...- "; break;
+            case ';': cout<<"-.-.- "; break;
+            case '/': cout<<"-..-. "; break;
+            case '-': cout<<"-....- "; break;
+                   
             default:  continue; break;
            }
        }
