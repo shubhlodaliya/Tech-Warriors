@@ -76,14 +76,18 @@ public:
             case ',': cout<<"--..-- "; break;
             case '?': cout<<"..-.. "; break;
             case ':': cout<<"---... "; break;
-            case '!': cout<<"..__. "; break;
+            case '!': cout<<"-.-.-- "; break;
             case '"': cout<<".-..-. "; break;
             case '\'': cout<<".----. "; break;
             case '=': cout<<"-...- "; break;
             case ';': cout<<"-.-.- "; break;
             case '/': cout<<"-..-. "; break;
             case '-': cout<<"-....- "; break;
-                   
+            case '(': cout<<"-.--. "; break;
+            case ')': cout<<"-.--.- "; break;       
+            case '_': cout<<"..--.- "; break;
+            case '@': cout<<".--.-. "; break;       
+            case '&': cout<<".-... "; break;       
             default:  continue; break;
            }
        }
