@@ -1,6 +1,4 @@
 #include<bits/stdc++.h>
-#include<cstring>
-#include<iostream>
 using namespace std;
 class morse
 {
